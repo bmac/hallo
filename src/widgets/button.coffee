@@ -56,7 +56,7 @@
           catch e
             return
       else
-        queryState = @options.queryState
+        queryState = @options.queryState or ()->
 
       if @options.command
         @button.on 'click', (event) =>
